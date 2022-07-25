@@ -16,7 +16,7 @@ function signIn() {
                 console.log(response);
                 if (response.data == false) {             
                     container.innerHTML = 'Username or password is incorrect!'
-                } else if (response.data == true) {
+                } else {
                     container.innerHTML = 'Logged In.'
                 }
             })
