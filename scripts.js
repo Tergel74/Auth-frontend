@@ -22,9 +22,9 @@ function signUp() {
     axios.post('http://localhost:3000/user/create', user)
     .then(function (response) {
         console.log(response);
-        if (response.data == true) {
+        if (response.data == false) {
             container.innerHTML = 'Username taken!'
-        } else if(response.data == false) {
+        } else if(response.data == true) {
             container.innerHTML = 'Suucessfully signed up!'
         }
     })
